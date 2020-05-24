@@ -52,7 +52,7 @@ namespace AntiDecompiler_Cleaner {
                         continue;
                     instr.Remove(instr[i]);
                     Console.ForegroundColor = ConsoleColor.Green;
-                    Console.WriteLine("[+] Cleaning AntiDeompiler method : 0x{0:x2} {1} ", method.MDToken.Raw, method.Name);
+                    Console.WriteLine("[+] Cleaning AntiDecompiler method : 0x{0:x2} {1} ", method.MDToken.Raw, method.Name);
                 }
             }
         }
@@ -73,7 +73,7 @@ namespace AntiDecompiler_Cleaner {
                         instr[i].OpCode = OpCodes.Nop;
                         instr[i + 1].OpCode = OpCodes.Nop;
                         Console.ForegroundColor = ConsoleColor.Green;
-                        Console.WriteLine("[+] Cleaning AntiDeompiler method : 0x{0:x2} {1} ", method.MDToken.Raw, method.Name);
+                        Console.WriteLine("[+] Cleaning AntiDecompiler method : 0x{0:x2} {1} ", method.MDToken.Raw, method.Name);
                     }
                     catch (Exception ex) {
                         Console.ForegroundColor = ConsoleColor.Red;
@@ -100,7 +100,7 @@ namespace AntiDecompiler_Cleaner {
                         instr[i].OpCode = OpCodes.Nop;
                         instr[i + 1].OpCode = OpCodes.Nop;
                         Console.ForegroundColor = ConsoleColor.Green;
-                        Console.WriteLine("[+] Cleaning AntiDeompiler method : 0x{0:x2} {1} ", method.MDToken.Raw, method.Name);
+                        Console.WriteLine("[+] Cleaning AntiDecompiler method : 0x{0:x2} {1} ", method.MDToken.Raw, method.Name);
                     }
                     catch (Exception ex) {
                         Console.ForegroundColor = ConsoleColor.Red;
